@@ -11,7 +11,6 @@ function Home () {
 
 
     const updateLocation = (event) => {
-        console.log("On click");
         if (event.target.value && event.target.value === "uk") {
             setSelectOptions(ukOptions);
             setLocation(event.target.value)
@@ -21,8 +20,6 @@ function Home () {
             setSelectOptions(usOptions);
             setLocation(event.target.value)
         } 
-
-        console.log("Select options ", selectOptions);
     }
 
     const getLength = () => {
